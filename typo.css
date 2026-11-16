@@ -1,0 +1,46 @@
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16pt;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.5;
+}
+.display-medium {
+  font-weight: 400;
+  font-size: 27pt;
+}
+button {
+    background-color: burlywood;
+}
+
+button:hover {
+    background-color: cadetblue;
+}
+
+button:focus {
+    background-color: rgb(26, 109, 50);
+}
+#agree {
+    margin-right: 1em;
+    transform: scale(2);
+}
+
+/* Псевдостиль наведения курсора на чекбокс */
+#agree:hover {
+    cursor: pointer;
+}
+
+/* Псевдостиль наведения на метку рядом с чекбоксом */
+#agree:hover ~ label {
+    color: darkorange; /* Цвет при наведении */
+}
+
+#agree ~ label {
+    color: red;
+}
+
+#agree:checked ~ label {
+    color: green;
+}

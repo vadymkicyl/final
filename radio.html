@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Радіокнопки з рамкою</title>
+    <link rel="stylesheet" href="radio.css" />
+</head>
+<body>
+    <h1>Вибір опції</h1>
+    <div class="radio-group">
+        <label class="radio-item">
+            <input type="radio" name="option" value="1" onchange="selectRadio(this)">
+            <span class="radio-label">Опція 1</span>
+        </label>
+        <label class="radio-item">
+            <input type="radio" name="option" value="2" onchange="selectRadio(this)">
+            <span class="radio-label">Опція 2</span>
+        </label>
+        <label class="radio-item">
+            <input type="radio" name="option" value="3" onchange="selectRadio(this)">
+            <span class="radio-label">Опція 3</span>
+        </label>
+        <label class="radio-item">
+            <input type="radio" name="option" value="4" onchange="selectRadio(this)">
+            <span class="radio-label">Опція 4</span>
+        </label>
+        <label class="radio-item">
+            <input type="radio" name="option" value="5" onchange="selectRadio(this)">
+            <span class="radio-label">Опція 5</span>
+        </label>
+    </div>
+
+    <script>
+        function selectRadio(radio) {
+            const items = document.querySelectorAll('.radio-item');
+            items.forEach(item => {
+                item.classList.remove('selected');
+            });
+            radio.closest('.radio-item').classList.add('selected');
+        }
+    </script>
+</body>
+</html>

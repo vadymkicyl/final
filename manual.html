@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML для начинающих</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 30px;
+        }
+        .code {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-left: 4px solid #0066cc;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+            border-radius: 5px;
+        }
+        .example {
+            background-color: #e6f2ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .tip {
+            background-color: #fff3cd;
+            padding: 10px;
+            border-left: 4px solid #ffc107;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        ul {
+            background-color: #f9f9f9;
+            padding: 15px 15px 15px 40px;
+            border-radius: 5px;
+        }
+        li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>📚 HTML для начинающих</h1>
+    <p>Привет! Этот мануал поможет тебе научиться писать HTML - язык для создания веб-страниц.</p>
+
+    <h2>🏗️ Что такое HTML?</h2>
+    <p>HTML - это как конструктор для веб-страниц. Ты строишь страницу из блоков (тегов), как дом из кирпичиков.</p>
+
+    <h2>📝 Основная структура</h2>
+    <p>Каждая HTML-страница начинается с этого:</p>
+    <div class="code">
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;html&gt;<br>
+        &nbsp;&nbsp;&lt;head&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Моя страница&lt;/title&gt;<br>
+        &nbsp;&nbsp;&lt;/head&gt;<br>
+        &nbsp;&nbsp;&lt;body&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Здесь будет твой контент<br>
+        &nbsp;&nbsp;&lt;/body&gt;<br>
+        &lt;/html&gt;
+    </div>
+    <div class="tip">
+        💡 <b>Запомни:</b> Теги всегда открываются &lt;tag&gt; и закрываются &lt;/tag&gt;
+    </div>
+
+    <h2>🎨 Таблицы</h2>
+    <p>Таблица - это сетка из строк и колонок. Как Excel, но на веб-странице.</p>
+    
+    <div class="code">
+        &lt;table&gt;<br>
+        &nbsp;&nbsp;&lt;tr&gt;  &lt;!-- строка --&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Ячейка 1&lt;/td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Ячейка 2&lt;/td&gt;<br>
+        &nbsp;&nbsp;&lt;/tr&gt;<br>
+        &lt;/table&gt;
+    </div>
+
+    <div class="example">
+        <h3>Результат:</h3>
+        <table style="border: 1px solid #ccc; border-collapse: collapse;">
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 8px;">Ячейка 1</td>
+                <td style="border: 1px solid #ccc; padding: 8px;">Ячейка 2</td>
+            </tr>
+        </table>
+    </div>
+
+    <h3>Основные теги таблицы:</h3>
+    <ul>
+        <li><b>&lt;table&gt;</b> - сама таблица</li>
+        <li><b>&lt;tr&gt;</b> - строка (table row)</li>
+        <li><b>&lt;td&gt;</b> - ячейка данных (table data)</li>
+        <li><b>&lt;th&gt;</b> - заголовок ячейки (жирный и по центру)</li>
+        <li><b>&lt;thead&gt;</b> - заголовок таблицы</li>
+        <li><b>&lt;tbody&gt;</b> - тело таблицы</li>
+        <li><b>&lt;tfoot&gt;</b> - подвал таблицы</li>
+    </ul>
+
+    <h2>📝 Формы</h2>
+    <p>Формы - это место, где пользователь может вводить данные: текст, числа, выбирать опции.</p>
+
+    <h3>Тег &lt;input&gt; - самый важный!</h3>
+    <p>Input - это поле для ввода. Тип поля определяется атрибутом <b>type</b>:</p>
+
+    <div class="code">
+        &lt;input type="text"&gt;     - текстовое поле<br>
+        &lt;input type="password"&gt; - поле для пароля<br>
+        &lt;input type="email"&gt;    - для email<br>
+        &lt;input type="number"&gt;   - для чисел<br>
+        &lt;input type="date"&gt;     - выбор даты<br>
+        &lt;input type="checkbox"&gt; - галочка<br>
+        &lt;input type="radio"&gt;    - радиокнопка<br>
+        &lt;input type="file"&gt;     - загрузка файла
+    </div>
+
+    <div class="example">
+        <h3>Результат:</h3>
+        <input type="text" placeholder="Текст"><br><br>
+        <input type="password" placeholder="Пароль"><br><br>
+        <input type="email" placeholder="email@example.com"><br><br>
+        <input type="number" placeholder="Число"><br><br>
+        <input type="date"><br><br>
+        <input type="checkbox"> Галочка<br><br>
+        <input type="radio" name="demo"> Радио 1 <input type="radio" name="demo"> Радио 2<br><br>
+        <input type="file">
+    </div>
+
+    <h3>Другие элементы форм:</h3>
+    <ul>
+        <li><b>&lt;textarea&gt;</b> - большое текстовое поле (для нескольких строк)</li>
+        <li><b>&lt;select&gt;</b> - выпадающий список</li>
+        <li><b>&lt;button&gt;</b> - кнопка</li>
+        <li><b>&lt;label&gt;</b> - подпись к элементу</li>
+    </ul>
+
+    <h2>🎯 Радиокнопки (Radio)</h2>
+    <p>Радиокнопки - это когда можно выбрать ТОЛЬКО ОДНУ опцию из группы.</p>
+
+    <div class="code">
+        &lt;input type="radio" name="color" value="red"&gt; Красный<br>
+        &lt;input type="radio" name="color" value="blue"&gt; Синий<br>
+        &lt;input type="radio" name="color" value="green"&gt; Зеленый
+    </div>
+
+    <div class="example">
+        <h3>Результат:</h3>
+        <input type="radio" name="color" value="red"> Красный<br>
+        <input type="radio" name="color" value="blue"> Синий<br>
+        <input type="radio" name="color" value="green"> Зеленый
+    </div>
+
+    <div class="tip">
+        💡 <b>Важно:</b> Все радиокнопки в группе должны иметь одинаковое <b>name</b>, чтобы работали вместе!
+    </div>
+
+    <h2>🎨 CSS - стили</h2>
+    <p>CSS - это "одежда" для твоей HTML-страницы. Без CSS страница выглядит скучно.</p>
+
+    <h3>Как подключить CSS?</h3>
+    <div class="code">
+        &lt;link rel="stylesheet" href="style.css"&gt;
+    </div>
+
+    <h3>Основные CSS свойства:</h3>
+    <ul>
+        <li><b>color</b> - цвет текста</li>
+        <li><b>background-color</b> - цвет фона</li>
+        <li><b>border</b> - рамка</li>
+        <li><b>padding</b> - отступ внутри</li>
+        <li><b>margin</b> - отступ снаружи</li>
+        <li><b>font-size</b> - размер шрифта</li>
+    </ul>
+
+    <h3>Пример CSS:</h3>
+    <div class="code">
+        .my-class {<br>
+        &nbsp;&nbsp;color: red;<br>
+        &nbsp;&nbsp;background-color: yellow;<br>
+        &nbsp;&nbsp;border: 2px solid black;<br>
+        &nbsp;&nbsp;padding: 10px;<br>
+        }
+    </div>
+
+    <div class="example">
+        <h3>Результат:</h3>
+        <div style="color: red; background-color: yellow; border: 2px solid black; padding: 10px; display: inline-block;">
+            Текст с этим стилем
+        </div>
+    </div>
+
+    <h2>🔧 Атрибуты</h2>
+    <p>Атрибуты - это дополнительные настройки для тегов. Пишутся так: <b>атрибут="значение"</b></p>
+
+    <ul>
+        <li><b>class</b> - имя класса для CSS</li>
+        <li><b>id</b> - уникальный идентификатор</li>
+        <li><b>name</b> - имя для форм</li>
+        <li><b>value</b> - начальное значение</li>
+        <li><b>placeholder</b> - подсказка в поле</li>
+        <li><b>required</b> - обязательное поле</li>
+    </ul>
+
+    <h2>📝 Пример полной страницы</h2>
+    <div class="code">
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;html&gt;<br>
+        &lt;head&gt;<br>
+        &nbsp;&nbsp;&lt;title&gt;Моя первая страница&lt;/title&gt;<br>
+        &nbsp;&nbsp;&lt;link rel="stylesheet" href="style.css"&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+        &nbsp;&nbsp;&lt;h1&gt;Привет, мир!&lt;/h1&gt;<br>
+        &nbsp;&nbsp;&lt;p&gt;Это моя первая страница.&lt;/p&gt;<br>
+        &nbsp;&nbsp;&lt;input type="text" placeholder="Введи имя"&gt;<br>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;
+    </div>
+
+    <h2>🎯 Советы для начинающих</h2>
+    <ul>
+        <li>Всегда закрывай теги! &lt;div&gt;...&lt;/div&gt;</li>
+        <li>Используй отступы для читаемости</li>
+        <li>Названия файлов маленькими буквами: index.html, style.css</li>
+        <li>Проверяй код в браузере (F12 - консоль)</li>
+        <li>Практикуйся - это лучший способ научиться!</li>
+    </ul>
+
+    <h2>🚀 Что дальше учить?</h2>
+    <ul>
+        <li>Больше типов input</li>
+        <li>Сложнее CSS (flexbox, grid)</li>
+        <li>JavaScript для интерактивности</li>
+        <li>Адаптивный дизайн</li>
+    </ul>
+
+    <div class="example">
+        <h3>🎉 Удачи в обучении!</h3>
+        <p>HTML - это просто! Начни с малого и постепенно добавляй новое.</p>
+    </div>
+</body>
+</html>

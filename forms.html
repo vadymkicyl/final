@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Елементи форм</title>
+    <link rel="stylesheet" href="forms.css" />
+</head>
+<body>
+    <h1>Елементи форм в HTML</h1>
+    <p>Форми - інтерактивні елементи для введення даних. Основний тег - &lt;form&gt;.</p>
+    <p>Найважливіший елемент - &lt;input&gt; з атрибутом type:</p>
+
+    <table class="form-table">
+        <thead>
+            <tr>
+                <th>Тип</th>
+                <th>Код</th>
+                <th>Приклад</th>
+                <th>Опис</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>text</td>
+                <td><span class="code">&lt;input type="text"&gt;</span></td>
+                <td><input type="text" placeholder="Текст"></td>
+                <td>Текстове поле</td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><span class="code">&lt;input type="password"&gt;</span></td>
+                <td><input type="password" placeholder="Пароль"></td>
+                <td>Поле для пароля</td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><span class="code">&lt;input type="email"&gt;</span></td>
+                <td><input type="email" placeholder="email@example.com"></td>
+                <td>Email з валідацією</td>
+            </tr>
+            <tr>
+                <td>number</td>
+                <td><span class="code">&lt;input type="number"&gt;</span></td>
+                <td><input type="number" min="0" max="100" value="50"></td>
+                <td>Числове поле</td>
+            </tr>
+            <tr>
+                <td>date</td>
+                <td><span class="code">&lt;input type="date"&gt;</span></td>
+                <td><input type="date"></td>
+                <td>Вибір дати</td>
+            </tr>
+            <tr>
+                <td>checkbox</td>
+                <td><span class="code">&lt;input type="checkbox"&gt;</span></td>
+                <td><input type="checkbox" checked> Галочка</td>
+                <td>Вибір опції</td>
+            </tr>
+            <tr>
+                <td>radio</td>
+                <td><span class="code">&lt;input type="radio"&gt;</span></td>
+                <td><input type="radio" name="r" checked> А <input type="radio" name="r"> Б</td>
+                <td>Радіокнопка</td>
+            </tr>
+            <tr>
+                <td>file</td>
+                <td><span class="code">&lt;input type="file"&gt;</span></td>
+                <td><input type="file"></td>
+                <td>Завантаження файлу</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Інші елементи</h2>
+    <table class="form-table">
+        <thead>
+            <tr>
+                <th>Елемент</th>
+                <th>Код</th>
+                <th>Приклад</th>
+                <th>Опис</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>textarea</td>
+                <td><span class="code">&lt;textarea&gt;</span></td>
+                <td><textarea placeholder="Текст..."></textarea></td>
+                <td>Багаторядкове поле</td>
+            </tr>
+            <tr>
+                <td>select</td>
+                <td><span class="code">&lt;select&gt;</span></td>
+                <td><select><option>1</option><option>2</option></select></td>
+                <td>Випадаючий список</td>
+            </tr>
+            <tr>
+                <td>button</td>
+                <td><span class="code">&lt;button&gt;</span></td>
+                <td><button type="button">Кнопка</button></td>
+                <td>Кнопка</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Атрибути</h2>
+    <table class="form-table">
+        <thead>
+            <tr>
+                <th>Атрибут</th>
+                <th>Опис</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>name</td>
+                <td>Ім'я для передачі на сервер</td>
+            </tr>
+            <tr>
+                <td>value</td>
+                <td>Початкове значення</td>
+            </tr>
+            <tr>
+                <td>placeholder</td>
+                <td>Підказка</td>
+            </tr>
+            <tr>
+                <td>required</td>
+                <td>Обов'язкове поле</td>
+            </tr>
+            <tr>
+                <td>disabled</td>
+                <td>Неактивне поле</td>
+            </tr>
+            <tr>
+                <td>min / max</td>
+                <td>Діапазон значень</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

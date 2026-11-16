@@ -1,0 +1,65 @@
+/* Настройки таблицы */
+.product-table {
+    border-collapse: collapse; /* Объединение рамок */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+/* Ячейки и зеленые рамки */
+.product-table th,
+.product-table td {
+    border: 2px solid #00ff00; /* Ярко-зеленая рамка */
+    padding: 6px 12px;
+}
+
+/* Заголовок таблицы */
+.product-table thead th {
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* Чередование цветов строк в tbody */
+/* Нечетные строки (1, 3) - розовый/персиковый */
+.product-table tbody tr:nth-child(odd) {
+    background-color: #fcaeae; 
+}
+
+/* Четные строки (2, 4) - голубой */
+.product-table tbody tr:nth-child(even) {
+    background-color: #b5d8ff;
+}
+
+/* Выравнивание колонок в tbody */
+.product-table tbody td:nth-child(1) {
+    text-align: center; /* Колонка № по центру */
+}
+
+.product-table tbody td:nth-child(2) {
+    text-align: left; /* Название по левому краю */
+}
+
+.product-table tbody td:nth-child(3) {
+    text-align: right; /* Цена по правому краю */
+}
+
+/* Стиль подвала tfoot */
+.product-table tfoot td {
+    background-color: #ffffff;
+}
+
+/* Вспомогательные классы для tfoot */
+.product-table .text-center {
+    text-align: center;
+}
+ы
+.product-table .bold {
+    font-weight: bold;
+}
+
+/* Итоговая сумма */
+.product-table .total-price {
+    text-align: right;
+    font-weight: bold;
+    vertical-align: middle;
+}

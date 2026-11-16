@@ -1,0 +1,133 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 3px 3px 2px #bbb;
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    width: 250px;
+    overflow: hidden;
+}
+.card-image {
+    background-color: chocolate;
+    /*             LT   RT  RB  LB    */
+    border-radius: 10px 10px 0px 0;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-headline, .card-subhead, .card-text {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.card-headline {
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+.card-subhead {
+    font-size: 16px;
+    color: #ffc107;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 8px;
+}
+.card-text {
+    flex: 1;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #666;
+    overflow: hidden;
+}
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 12px 12px 12px;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.card-button {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 8px 12px;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card-button.buy {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.card-button.buy:hover {
+    background-color: #45a049;
+}
+
+.card-button.favorite {
+    background-color: #f44336;
+    color: white;
+}
+
+.card-button.favorite:hover {
+    background-color: #da190b;
+}
+
+.card-button:active {
+    border: 2px solid #aaa;
+}
+.card-price {
+    display: flex;
+    flex-direction: column;
+}
+.card-price-discount {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+.card-price-old {
+    color: #bebebe;
+    font-size: small;
+    text-decoration: line-through;
+}
+.card-price-actual {
+    color: #e05252;
+    font-size: large;
+    font-weight: 700;
+}
+.card-dicount-percent {
+    background-color: #e05252;
+    border-radius: 1em;
+    color: snow;
+    font-size: small;
+    font-weight: 600;
+    padding: 1px 3px;
+}

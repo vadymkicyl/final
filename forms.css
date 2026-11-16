@@ -1,0 +1,47 @@
+/* Стилі для таблиці форм */
+.form-table {
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-table th,
+.form-table td {
+    border: 2px solid #00ff00;
+    padding: 10px 15px;
+    vertical-align: top;
+}
+
+.form-table thead th {
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.form-table tbody tr:nth-child(odd) {
+    background-color: #fcaeae;
+}
+
+.form-table tbody tr:nth-child(even) {
+    background-color: #b5d8ff;
+}
+
+.form-table .code {
+    font-family: 'Courier New', monospace;
+    background-color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.form-table input,
+.form-table select,
+.form-table textarea {
+    margin: 5px 0;
+}
+
+.form-table textarea {
+    width: 200px;
+    height: 60px;
+}
